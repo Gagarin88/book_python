@@ -20,3 +20,10 @@
 """
 
 ip = "192.168.3.1"
+okt0, okt1, okt2, okt3 = ip.split('.')
+ip_template = f'''
+IP address:
+{okt0:<10}  {okt1:<10}  {okt2:<10}  {okt3:<10}
+{0:010b}  {1:010b}  {2:010b}  {3:010b}
+'''
+print(ip_template)
